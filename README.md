@@ -19,5 +19,15 @@ The dataset linked to the variables in the problem statement attributes are Time
 ### Results and Interpretation
 Using General Linear Model and specifying the link function logit in R program to perform regression analysis.
 
+![image](https://github.com/NishaPardeshi/Regression_MentalHealthIllness/assets/34423049/80e93f41-cdc0-41ba-aade-8d3e6f1e3cab)
+
+Apart from the above variables more independent variables are considered and below are the results:
+
+![image](https://github.com/NishaPardeshi/Regression_MentalHealthIllness/assets/34423049/189c9d85-d5d8-4e6f-977b-ca0b01efd507)
+
+Based on the above regression analysis, Age and gender doesn’t have any significant effect on Work Interference (dependent variable).
+
+
+
 
 
