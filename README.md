@@ -34,10 +34,10 @@ Based on the above regression analysis, Age and gender doesn’t have any signif
          FH = 1: ln (p/1-p) = -1.234+0.9887 = -0.246  
     b1 is change in log odds comparing having no FH and FH.  
     
-    Transform odds into probability -> P = ey/1+ey     
-    For FH =0 : Probability = e-1.234 / 1+ e-1.234 = 0.23  
-    FH = 1 : Probability = e-0.246 / 1+ e-0.246 = 0.44  
-    Difference in probability = 0.44-0.23 = 0.21  
+    Transform odds into probability -> P = $(e^y/1+e^y)$   
+    For FH =0 : Probability = $(e^{-1.234} / 1+ e^{-1.234})$ = 0.23
+    FH = 1 : Probability = $(e^{-0.246} / 1+ e^{-0.246})$ = 0.44  
+    Difference in probability = 0.44-0.23 = 0.21 
    
     <b>Interpretation: </b> The company will have 21 percent points more Work Interference when employee has Family History compare to employees with no Family history.
 
@@ -47,9 +47,9 @@ Based on the above regression analysis, Age and gender doesn’t have any signif
     T = 1: ln (p/1-p) = -1.234+3.89 = 2.656   
     b2 is change in log odds comparing having no T and T.  
    
-    Transform odds into probability -> P = ey/1+ey  
-    For T =0 :- Probability = e-1.234 / 1+ e-1.234 = 0.23  
-    T =1 :- Probability = e2.656 / 1+ e2.656 = 0.93  
+    Transform odds into probability -> P = $(e^y/1+e^y)$   
+    For T =0 :- Probability = $(e^{-1.234} / 1+ e^{-1.234})$ = 0.23  
+    T =1 :- Probability = $(e^{2.656} / 1+ e^{2.656})$ = 0.93  
     Difference in probability = 0.93-0.23 = 0.71
    
     <b> Interpretation: - The company will have 71 percent points more Work Interference when employee has taken Treatment compare to employees with no Treatment. </b>
