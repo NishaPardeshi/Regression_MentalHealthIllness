@@ -52,7 +52,19 @@ Based on the above regression analysis, Age and gender doesn’t have any signif
     T =1 :- Probability = $(e^{2.656} / 1+ e^{2.656})$ = 0.93  
     Difference in probability = 0.93-0.23 = 0.71
    
-    <b> Interpretation: - The company will have 71 percent points more Work Interference when employee has taken Treatment compare to employees with no Treatment. </b>
+    <b> Interpretation: </b> The company will have 71 percent points more Work Interference when employee has taken Treatment compare to employees with no Treatment. 
+
+3. <b> Work_Interference = -1.2456+(0.9987*FH)+(3.9010*T)  </b>   
+   <b> Considering both Family History constant and the interpretation of Treatment. </b>  
+    For FH and T = 1: ln (p/1-p) = -1.234+0.9887+3.89 = 3.644  
+
+    Transform odds into probability -> P = $(e^y/1+e^y)$   
+    For FH and T =1 : Probability = $(e^{3.644} / 1+ e^{3.644})$ = 0.975  
+   
+    <b> Interpretation: </b> The company will have 97.5 percent points more Work Interference when employee has Family History and undergone Treatment.
+
+
+   
 
 
 
