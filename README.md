@@ -9,7 +9,7 @@ The dataset linked to the variables in the problem statement attributes are Time
 ## Problem 1
 ### Problem Statement
 1. What is the impact on work interference due to the mental health condition of the employees working in the US technology companies?
-2. Below are the few survey questions from the dataset to determine the problem statement: 
+2. Below are the few survey questions from the dataset to determine the problem statement:  
     - <b>Family History (FH):</b> Do you have a family history of mental illness?
     - <b>Treatment(T):</b> Have you sought treatment for a mental health condition?
     - <b>Work Interference (WI):</b> If you have a mental health condition, do you feel that it interferes with your work? This is dependent variable.
@@ -25,7 +25,34 @@ Apart from the above variables more independent variables are considered and bel
 
 <img src="https://github.com/NishaPardeshi/Regression_MentalHealthIllness/blob/master/Logistic_Regression/prob1coef.png" >
 
-Based on the above regression analysis, Age and gender doesn’t have any significant effect on Work Interference (dependent variable).
+Based on the above regression analysis, Age and gender doesn’t have any significant effect on Work Interference (dependent variable). 
+
+<b>Probabilities:</b> Finding the impact probability of independent variables on dependent variable.   
+1. <b> Work_Interference = -1.2456+(0.9987*FH)+(3.9010*T)  </b>  
+   <b> Considering Treatment constant and the interpretation of FH.  </b>   
+    For  FH =0 : ln(p/1-p) = -1.234  
+         FH = 1: ln (p/1-p) = -1.234+0.9887 = -0.246  
+    b1 is change in log odds comparing having no FH and FH.  
+    
+    Transform odds into probability -> P = ey/1+ey     
+    For FH =0 : Probability = e-1.234 / 1+ e-1.234 = 0.23  
+    FH = 1 : Probability = e-0.246 / 1+ e-0.246 = 0.44  
+    Difference in probability = 0.44-0.23 = 0.21  
+   
+    <b>Interpretation: </b> The company will have 21 percent points more Work Interference when employee has Family History compare to employees with no Family history.
+
+2. <b> Work_Interference = -1.2456+(0.9987*FH)+(3.9010*T)  </b>   
+   <b> Considering Family History constant and the interpretation of Treatment. </b>    
+    For T =0 : ln(p/1-p) = -1.234  
+    T = 1: ln (p/1-p) = -1.234+3.89 = 2.656   
+    b2 is change in log odds comparing having no T and T.  
+   
+    Transform odds into probability -> P = ey/1+ey  
+    For T =0 :- Probability = e-1.234 / 1+ e-1.234 = 0.23  
+    T =1 :- Probability = e2.656 / 1+ e2.656 = 0.93  
+    Difference in probability = 0.93-0.23 = 0.71
+   
+    <b> Interpretation: - The company will have 71 percent points more Work Interference when employee has taken Treatment compare to employees with no Treatment. </b>
 
 
 
