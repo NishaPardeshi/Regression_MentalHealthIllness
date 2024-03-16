@@ -63,6 +63,12 @@ Based on the above regression analysis, Age and gender doesn’t have any signif
    
     <b> Interpretation: </b> The company will have 97.5 percent points more Work Interference when employee has Family History and undergone Treatment.
 
+Using R "predict" function, the prediction results are predicted for all the observations of the variables.  
+Syntax: - predlogit <- predict(logit, data, type= 'response').  
+It is necessary to compute the error percent and measure of fitness to understand the improvement.  
+Therefore, from the prediction results confusion matrix is constructed to measure the error percentage.  
+
+
 
    
 
