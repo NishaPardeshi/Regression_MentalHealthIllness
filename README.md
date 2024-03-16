@@ -68,7 +68,15 @@ Syntax: - predlogit <- predict(logit, data, type= 'response').
 It is necessary to compute the error percent and measure of fitness to understand the improvement.  
 Therefore, from the prediction results confusion matrix is constructed to measure the error percentage.  
 
-<img src="https://github.com/NishaPardeshi/Regression_MentalHealthIllness/blob/master/Logistic_Regression/cfprob1.png" >  
+<img src="https://github.com/NishaPardeshi/Regression_MentalHealthIllness/blob/master/Logistic_Regression/cfprob1.PNG" >  
+
+### Strengths:  
+ROC(Receiver Operating Characteristics) curve: This curve determine the performance of the logit regression model.  
+The area under the curve tending to 1 will determine the performance of the logit model. The more near to 1 is best considered as good performance and below 0.5 means we should reconsider our model. 
+In this case, 0.895 area under curve value represents best performance by logit model.  
+
+
+
 
 
 
