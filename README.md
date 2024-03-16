@@ -77,9 +77,6 @@ In this case, 0.895 area under curve value represents best performance by logit 
 
 <img src="https://github.com/NishaPardeshi/Regression_MentalHealthIllness/blob/master/Logistic_Regression/prob1roc.PNG" >  
 
-### Limitations:  
-i. From the dataset, we might require more information about Treatment period, which is a limitation to analyze the effectiveness of the treatment taken by the employees.  
-
 ### Conclusion:  
 a. <b> Managerial Implication / Recommendation </b>  
 
@@ -150,14 +147,82 @@ In this case, 0.6952 area under curve value represents good performance by logit
 
 The above model has area under ROC curve 69.52%, which is good.  
 
-### Limitations:  
-i. From the dataset, we might require more information about Treatment period, which is a limitation to analyze the effectiveness of the treatment taken by the employees.  
-
 ### Conclusion:  
 a. <b> Managerial Implication / Recommendation </b>  
 
 <img src="https://github.com/NishaPardeshi/Regression_MentalHealthIllness/blob/master/Logistic_Regression/prob2concl1.PNG" >  
 
+## Problem 3  
+### Problem Statement
+1.To analyze the effectiveness of the health program for the employees working in USA and determine the employer offers privileges to their employees to tackle mental health issues?  
+2. Below are the few survey questions from the dataset to determine the problem statement:  
+    - <b>Benefits(B):</b> Does your employer provide mental health benefits?  
+    - <b>Care options(CO):</b> Do you know the options for mental health care your employer provides?  
+    - <b>Wellness Program (WP):</b>Has your employer ever discussed mental health as part of an employee program ?  
+    - <b>Seek help(SH):</b> Does your employer provide resources to learn more about mental health issues and how to seek help?  
+
+### Results and Interpretation
+Using General Linear Model and specifying the link function logit in R program to perform regression analysis.
+
+<img src="https://github.com/NishaPardeshi/Regression_MentalHealthIllness/blob/master/Logistic_Regression/prob3call.png" width="900" height="500">
+
+<b>Probabilities:</b> Finding the impact probability of independent variables on dependent variable.   
+1. <b> Wellness program = -3.5248+(2.4588*SH)+(1.7236*B)  </b>  
+   <b> Considering Benefits constant and the interpretation of SH.  </b>   
+    For SH = 0 : ln(p/1-p) = -3.5248  
+        SH = 1 : ln(p/1-p) = -3.5248+2.4588 = -1.066   
+    b1 is change in log odds comparing having no SH   
+    
+    Transform odds into probability -> P = $(e^y/1+e^y)$   
+    For SH =0 : Probability = $(e^{-3.5248} / 1+ e^{-3.5248})$ = 0.03  
+    SH = 1 : Probability = $(e^{-1.066} / 1+ e^{-1.066})$ = 0.26  
+    Difference in probability = 0.26-0.03 = 0.23   
+   
+    <b>Interpretation: </b> The company will have 23 percent points more Wellness Program when employee has Seek Help compare to employees with no Seek Help.  
+
+2. <b> Wellness program = -3.5248+(2.4588*SH)+(1.7236*B) </b>   
+   <b> Considering Benefits interpretation and constant for SH. </b>    
+    For B =0 : ln(p/1-p) = -3.5248  
+    B = 1: ln (p/1-p) = -3.5248+1.7236 = -1.8012   
+    b1 is change in log odds comparing having no Benefits.    
+   
+    Transform odds into probability -> P = $(e^y/1+e^y)$   
+    For B =0 : Probability = $(e^{-3.5248} / 1+ e^{-3.5248})$ = 0.03   
+    B =1 : Probability = $(e^{-1.8012} / 1+ e^{-1.8012})$ = 0.14    
+    Difference in probability = 0.14-0.03 = 0.11  
+   
+    <b> Interpretation: </b> The company will have 0.11 percent points more Wellness Program when employee has Benefits compare to employees with no Benefits.
+   
+4. <b> Wellness program = -3.5248+(2.4588*SH)+(1.7236*B) </b>   
+   <b> Considering Benefits and Seek Help for the interpretation. </b>
+    For SH =1 and B =1: ln (p/1-p) = 3.5248+2.4588+1.7236 = 0.6576  
+
+    Transform odds into probability -> P = $(e^y/1+e^y)$   
+    For FH and T =1 : Probability = $(e^{-0.6576} / 1+ e^{-0.6576})$ = 0.66  
+   
+    <b> Interpretation: </b> The company will have 66 percent points more Wellness Program when employee is aware of Benefits and seeks help.  
+
+Using R "predict" function, the prediction results are predicted for all the observations of the variables.  
+Syntax: - predlogit <- predict(logit, data, type= 'response').  
+It is necessary to compute the error percent and measure of fitness to understand the improvement.  
+Therefore, from the prediction results confusion matrix is constructed to measure the error percentage.  
+
+<img src="https://github.com/NishaPardeshi/Regression_MentalHealthIllness/blob/master/Logistic_Regression/cfprob3.PNG" >  
+
+### Strengths:  
+ROC(Receiver Operating Characteristics) curve: This curve determine the performance of the logit regression model.  
+The area under the curve tending to 1 will determine the performance of the logit model. The more near to 1 is best considered as good performance and below 0.5 means we should reconsider our model. 
+In this case, 0.8632 area under curve value represents best performance by logit model.  
+
+<img src="https://github.com/NishaPardeshi/Regression_MentalHealthIllness/blob/master/Logistic_Regression/prob3roc.PNG" >  
+
+### Conclusion:  
+a. <b> Managerial Implication / Recommendation </b>  
+
+<img src="https://github.com/NishaPardeshi/Regression_MentalHealthIllness/blob/master/Logistic_Regression/prob3concl1.PNG" >  
+
+### Limitations:  
+i. From the dataset, we might require more information about Treatment period, which is a limitation to analyze the effectiveness of the treatment taken by the employees.  
 
 
 
