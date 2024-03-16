@@ -75,6 +75,13 @@ ROC(Receiver Operating Characteristics) curve: This curve determine the performa
 The area under the curve tending to 1 will determine the performance of the logit model. The more near to 1 is best considered as good performance and below 0.5 means we should reconsider our model. 
 In this case, 0.895 area under curve value represents best performance by logit model.  
 
+<img src="https://github.com/NishaPardeshi/Regression_MentalHealthIllness/blob/master/Logistic_Regression/prob1roc.PNG" >  
+
+### Limitations:  
+i. From the dataset, we might require more information about Treatment period, which is a limitation to analyze the effectiveness of the treatment taken by the employees.  
+
+### Conclusion:  
+a. <b> Managerial Implication / Recommendation </b>  
 
 
 
