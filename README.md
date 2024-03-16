@@ -68,6 +68,9 @@ Syntax: - predlogit <- predict(logit, data, type= 'response').
 It is necessary to compute the error percent and measure of fitness to understand the improvement.  
 Therefore, from the prediction results confusion matrix is constructed to measure the error percentage.  
 
+<img src="https://github.com/NishaPardeshi/Regression_MentalHealthIllness/blob/master/Logistic_Regression/cfprob1.png" >  
+
+
 
 
    
