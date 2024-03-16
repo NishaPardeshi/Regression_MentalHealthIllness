@@ -164,7 +164,7 @@ a. <b> Managerial Implication / Recommendation </b>
 ### Results and Interpretation
 Using General Linear Model and specifying the link function logit in R program to perform regression analysis.
 
-<img src="https://github.com/NishaPardeshi/Regression_MentalHealthIllness/blob/master/Logistic_Regression/prob3call.png" width="900" height="500">
+<img src="https://github.com/NishaPardeshi/Regression_MentalHealthIllness/blob/master/Logistic_Regression/prob3call.PNG" width="900" height="500">
 
 <b>Probabilities:</b> Finding the impact probability of independent variables on dependent variable.   
 1. <b> Wellness program = -3.5248+(2.4588*SH)+(1.7236*B)  </b>  
