@@ -1,5 +1,9 @@
 # Mental Health Program Awareness
 
+<img width="1536" height="1024" alt="mental-health-program" src="https://github.com/user-attachments/assets/8c6399e2-07ea-4ebb-9783-a68138d5b3f4" />
+
+This project analyzes employee mental health survey data from U.S. technology companies to understand work interference, employer awareness, and wellness program effectiveness using logistic regression models. <br>
+
 ## Background 
 Mental Health Illness of the employee’s data is 2014 survey data conducted by Open Sourcing Mental Illness (https://osmihelp.org/research/) organization across the countries, targeting the Tech companies.
 
