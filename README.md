@@ -4,6 +4,63 @@
 
 This project analyzes employee mental health survey data from U.S. technology companies to understand work interference, employer awareness, and wellness program effectiveness using logistic regression models. <br>
 
+## Problem Statement
+- How does mental health affect employee work performance in U.S. tech companies?
+- Do employers recognize mental health as seriously as physical health?
+- Are workplace wellness programs effective in supporting employees?
+
+## Dataset
+- Source: Open Sourcing Mental Illness (OSMI)
+- Year: 2014–2015
+- Population: Employees in U.S. technology companies
+- Key Variables:
+  - Family History
+  - Treatment
+  - Work Interference
+  - Employer Support Indicators
+  - Model evaluation using ROC-AUC and confusion matrices
+ 
+## Methodology
+- Applied Generalized Linear Models with logit link function
+- Built three logistic regression models for:
+  1. Work Interference
+  2. Employer Mental Health Awareness
+  3. Wellness Program Effectiveness
+
+## Key Results
+- ROC-AUC of 0.89 for work interference model
+- 71 percentage-point increase in work interference among employees seeking treatment
+- 21 percentage-point higher interference for employees with family history
+- Strong association between employer awareness and ease of taking mental health leave
+
+## Impact
+- Provided data-driven insights for improving workplace mental health policies
+- Demonstrated strong model performance in identifying work interference
+- Highlighted key factors influencing employee well-being in tech organizations
+
+## Tools & Technologies
+- R Programming
+- Logistic Regression (GLM)
+- ROC Curve & AUC
+- Confusion Matrix
+- Statistical Data Analysis
+
+## How to Run
+1. Clone the repository
+2. Load the dataset in R
+3. Run the regression scripts
+4. Evaluate results using ROC and confusion matrix
+
+## Limitations
+- Treatment duration and severity were not available
+- Self-reported survey data may introduce bias
+
+## Future Improvements
+- Incorporate longitudinal mental health data
+- Extend analysis using machine learning models
+- Compare trends across countries and industries
+ 
+# Detailed Overview & Insights:
 ## Background 
 Mental Health Illness of the employee’s data is 2014 survey data conducted by Open Sourcing Mental Illness (https://osmihelp.org/research/) organization across the countries, targeting the Tech companies.
 
